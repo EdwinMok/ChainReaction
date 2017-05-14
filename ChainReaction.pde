@@ -25,5 +25,7 @@
        if ( !reactionStarted ){
           balls[0].x = mouseX;
           balls[0].y = mouseY;
+          balls[0].dx = 0;
+          balls[0].dy = 0;
        }
     }
