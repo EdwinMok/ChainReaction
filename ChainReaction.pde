@@ -15,6 +15,7 @@
     void draw(){
         background(0);
         for (int x = 0; x < balls.length; x++){
+          fill(balls[x].red,balls[x].green,balls[x].blue);
           ellipse(balls[x].x,balls[x].y,(balls[x].rad)*2,(balls[x].rad)*2);
           balls[x].move();
         }
