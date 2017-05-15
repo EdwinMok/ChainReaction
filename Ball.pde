@@ -19,6 +19,8 @@ class Ball {
       y = random((height-rad) + rad/2);
       dx = random(10) - 5;
       dy = random(10) - 5;
+      //state: if state = 0, it is not reacting. if state = 1, it is reacting
+      state = 0;
       setColor();
   }
   
@@ -39,5 +41,12 @@ class Ball {
      bounce();
   }
   
+  void getBig() {
+    dx = dy = 0;
+    rad += 1;
+  }
   
+  void getSmall(){
+    rad -= 1;
+  }
 }
